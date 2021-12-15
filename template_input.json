@@ -1,0 +1,10 @@
+{
+  "accountid": "ENTER PARENT ACCOUNT ID HERE",
+  "querykey": "ENTER INSIGHTS QUERY KEY HERE",
+  "accountquery": "SELECT uniques(consumingAccountName) FROM NrDailyUsage",
+  "basequery": "SELECT count(*) from NrDailyUsage where productLine = 'APM' and usageType = 'Application' and apmLanguage = 'java' facet  consumingAccountName,apmAppName,apmAgentVersion WHERE consumingAccountName=?",
+  "querystart" : "2021-12-14",
+  "queryend" : "2021-12-15",
+  "slicesizeminutes" : "1440",
+  "querysuffix" : "LIMIT MAX"
+}
