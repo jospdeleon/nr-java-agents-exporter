@@ -7,12 +7,13 @@
 > From root directory, `npm install` to install node modules.  
 
 ## Getting Started
-> Setup your config file -- in the root directory edit the json file template_input.json. For the purpose of this program, you only need to update the values for `accountid` and `querykey`.
+> Setup your config file -- in the root directory edit the json file template_input.json. For the purpose of this program, you only need to update the values for `accountid`, `querykey`, `querystart` and `queryend`.
 
 | Element          | Description                                         |
 | ---------------- | --------------------------------------------------- |
 | accountid        | NewRelic account ID                                 |
 | querykey         | NewRelic Insights Query key                         |
+| accountquery     | Query to extract sub-accounts                       |
 | basequery        | Base query to issue                                 |
 | querystart       | Start date of query in format "YYYY-MM-DD"          |
 | queryend         | End date of query in format "YYYY-MM-DD"            | 
